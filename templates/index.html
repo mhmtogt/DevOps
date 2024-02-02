@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hesap Makinesi</title>
+</head>
+<body>
+    <h1>Online Hesap Makinesi</h1>
+    <form action="/calculate" method="post">
+        <label for="num1">Sayı 1:</label>
+        <input type="text" name="num1" required>
+        <br>
+        <label for="num2">Sayı 2:</label>
+        <input type="text" name="num2" required>
+        <br>
+        <label for="operation">İşlem:</label>
+        <select name="operation" required>
+            <option value="add">Topla</option>
+            <option value="subtract">Çıkar</option>
+            <option value="multiply">Çarp</option>
+            <option value="divide">Böl</option>
+        </select>
+        <br>
+        <button type="submit">Hesapla</button>
+    </form>
+</body>
+</html>
