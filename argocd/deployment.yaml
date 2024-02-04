@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flaskapp
+  name: devops
   namespace: devopsapp
   labels:
-    app: flaskapp
+    app: devops
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: flaskapp
+      app: devops
   template:
     metadata:
       labels:
-        app: flaskapp
+        app: devops
     spec:
       containers:
-      - name: flaskapp
-        image: iyilmaz17/flaskapp:v1
+      - name: devops
+        image: mhmtogt/devops:v1
         ports:
         - containerPort: 4000
